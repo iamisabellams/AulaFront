@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #000000;
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex; /* coloca lado a lado */
+  height: 100vh;
+}
+
+.left {
+  position: relative; /* cria contexto para o absolute */
+  flex: 1;
+  background: #0a1a4a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute; /* fica por cima */
+  top: 30px; /* distância do topo */
+  left: 30px; /* distância da esquerda */
+  width: 120px; /* ajuste conforme a imagem */
+  height: auto;
+}
+
+.right {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column; /* empilha os campos */
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* espaçamento vertical entre TODOS os elementos */
+  width: 100%;
+  max-width: 280px;
+}
+
+p {
+  font-size: 8px;
+  align-content: center;
+}
+
+.password-container {
+  position: relative;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 8px 35px 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+}
+
+.email-container {
+  position: relative;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.email-container input {
+  width: 100%;
+  padding: 8px 35px 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
